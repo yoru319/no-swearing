@@ -1,0 +1,126 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  - trigger: "sb"
+    replace: "我喜欢你"
+  - trigger: "shabi"
+    replace: "我喜欢你"
+  - trigger: "cnm"
+    replace: "我喜欢你"
+  - trigger: "goudongxi"
+    replace: "我爱你"
+  - trigger: "zhenfan"
+    replace: "我喜欢你"
+  - trigger: "nimasile"
+    replace: "我喜欢你"
+  - trigger: "siquanjia"
+    replace: "我喜欢你"
+  - trigger: "gundan"
+    replace: "喵"
+  - trigger: "shazi"
+    replace: "可爱"
+  - trigger: "nitama"
+    replace: "我爱你"
+  - trigger: "qusi"
+    replace: "亲我"
+  - trigger: "yiguchouwei"
+    replace: "一股香味"
+  - trigger: "taoyan"
+    replace: "喜欢"
+  - trigger: "nimabi"
+    replace: "嫁给我"
+  - trigger: "caoni"
+    replace: "操我"
+  - trigger: "feiwu"
+    replace: "妈妈"
+  - trigger: "fw"
+    replace: "妈妈"
+  - trigger: "zazhong"
+    replace: "宝宝"
+  - trigger: "yezhong"
+    replace: "宝宝"
+  - trigger: "chusheng"
+    replace: "宝宝"
+  - trigger: "made"
+    replace: "宝宝"
+  - trigger: "exin"
+    replace: "可爱"
+  - trigger: "xialiu"
+    replace: "可爱"
+  - trigger: "huogai"
+    replace: "对不起"
+  - trigger: "laji"
+    replace: "可爱"
+  - trigger: "rinima"
+    replace: "我喜欢你"
+  - trigger: "qutama"
+    replace: "我喜欢你"
+  - trigger: "naocan"
+    replace: "我喜欢你"
+  - trigger: "ruozhi"
+    replace: "我喜欢你"
+  - trigger: "zhizhang"
+    replace: "我喜欢你"
+  - trigger: "chunbi"
+    replace: "我喜欢你"
+  - trigger: "saobi"
+    replace: "我喜欢你"
+  - trigger: "chouchoude"
+    replace: "香香的"
+  - trigger: "fanni"
+    replace: "稀罕你"
+  - trigger: "bizui"
+    replace: "亲嘴"
+  - trigger: "youbingba"
+    replace: "我喜欢你"
+  - trigger: "nishizhu"
+    replace: "我喜欢你"
+  - trigger: "renzha"
+    replace: "我喜欢你"
+  - trigger: "chunhuo"
+    replace: "我喜欢你"
+  - trigger: "biantai"
+    replace: "我喜欢你"
+  - trigger: "gunkai"
+    replace: "我喜欢你"
+  - trigger: "jingshenbuzhengchang"
+    replace: "我喜欢你"
+  - trigger: "jingshenbing"
+    replace: "宝宝"
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
