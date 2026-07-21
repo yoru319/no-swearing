@@ -101,6 +101,10 @@ matches:
     replace: "我喜欢你"
   - trigger: "jingshenbing"
     replace: "宝宝"
+  - trigger: "nmb"
+    replace: "我喜欢你"
+  - trigger: "shaluan"
+    replace: "我喜欢你"
   # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
 
   # But matches can also be dynamic:
